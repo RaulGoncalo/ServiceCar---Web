@@ -45,9 +45,7 @@ export function AppRoutes(){
                     <Route
                         exact path ="/home" 
                         element = {
-                            <Private> 
                                 <Home/> 
-                            </Private>
                         } />
                 </Routes>
             </AuthProvider>

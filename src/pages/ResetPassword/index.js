@@ -52,7 +52,7 @@ export function ResetPassword() {
                     setValid(true)
                     setLoading(false)
                }else{
-                   
+                    setLoading(false)
                    alert("Problemas com seus dados verifique")
                }
             }else(
@@ -80,7 +80,7 @@ export function ResetPassword() {
                 setValidResetPassword(true)
                 setLoading(false)
             }else{
-                
+                setLoading(false)
                 alert("Problemas com seus dados verifique")
             }
         }else{
@@ -100,16 +100,20 @@ export function ResetPassword() {
                     
                     console.log(res)
                     if(res.status == 201){
+                        setLoading(false)
                         alert("Senha alterada com sucesso")
                         navigate('/logon')
                     }else{
+                        setLoading(false)
                         alert("Erro ao salvar")
                         navigate('/logon')
                     }
                 }else{
+                    setLoading(false)
                     setPasswordConfirmError("Senhas diferentes")
                 }
             }else{
+                setLoading(false)
                 setPasswordError("A senha deve conter pelo menos 1 letra minúscula, 1 letra maiúscula, 1 número e 1 caractere especial")
             }
         }else{

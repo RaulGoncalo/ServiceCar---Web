@@ -58,9 +58,9 @@ export function Home () {
     }
 
     
-    if (loading){
+    /*if (loading){
         return <Loader/>
-    }
+    }*/
 
     return(
 

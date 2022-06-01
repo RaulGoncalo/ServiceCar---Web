@@ -96,7 +96,7 @@ const BodyCard = styled.div`
     align-items: center;
 
     height: 100%;
-    max-height: 200px;
+    min-height: 200px;
     
     margin-bottom: 38px;
     padding: 10px;

@@ -209,7 +209,7 @@ export function Register() {
 
                             >
                                 <Option value="Outros">Outros</Option>
-                                <Option value="Eletica">Elética</Option>
+                                <Option value="Elétrica">Elétrica</Option>
                                 <Option value="Funilaria">Funilaria</Option>
                                 <Option value="Limpeza">Limpeza</Option>
                                 <Option value="Pintura">Pintura</Option>
@@ -251,7 +251,7 @@ export function Register() {
                             />
                             <Input
                                 placeholder="Senha"
-                                type={"passwordword"}
+                                type={"password"}
                                 value={password}
                                 onChange={e => {
                                     setPassword(e.target.value)
@@ -262,7 +262,7 @@ export function Register() {
                             />
                             <Input
                                 placeholder="Confirmar senha"
-                                type={"passwordword"}
+                                type={"password"}
                                 value={passwordConfirm}
                                 onChange={e => {
                                     setPasswordConfirm(e.target.value)
